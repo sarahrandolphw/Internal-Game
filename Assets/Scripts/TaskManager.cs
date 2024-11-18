@@ -11,6 +11,12 @@ public class TaskManager : MonoBehaviour
     public TextMeshProUGUI output;
     public TMP_InputField input;
     private List<string> userTasks = new List<string>();
+    [SerializeField]
+    public List<string> defaultTasks = new List<string> {
+    "Pull up a picture of your favorite celebrity",
+    "Wink and smile at someone",
+    "New task blah"
+};
     public void ButtonDown()
     {
         userTasks.Add(input.text);
@@ -18,5 +24,4 @@ public class TaskManager : MonoBehaviour
         Debug.Log(String.Join(", ", userTasks));
         output.text = userTasks[userTasks.Count - 1];
     }
-    
 }

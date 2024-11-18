@@ -9,6 +9,7 @@ public enum CanvasType
 {
     MainMenu,
     InputMenu,
+    GameUI,
     EndScreen
 }
 
