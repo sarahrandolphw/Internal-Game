@@ -61,6 +61,7 @@ public class CanvasManager : MonoBehaviour
             gameCamera.enabled = true;
         }
         ResetGameElements();
+        Debug.Log($"Camera is active: {gameCamera.enabled}");
         Debug.Log("Game is active");
     }
 
